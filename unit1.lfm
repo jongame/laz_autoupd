@@ -1,0 +1,49 @@
+object Form1: TForm1
+  Left = 255
+  Height = 519
+  Top = 119
+  Width = 1012
+  Caption = 'Form1'
+  ClientHeight = 519
+  ClientWidth = 1012
+  OnActivate = FormActivate
+  LCLVersion = '2.2.4.0'
+  object Memo1: TMemo
+    Left = 8
+    Height = 500
+    Top = 5
+    Width = 627
+    Lines.Strings = (
+      'Memo1'
+    )
+    OnChange = Memo1Change
+    TabOrder = 0
+  end
+  object LazAutoUpdate1: TLazAutoUpdate
+    About.Description.Strings = (
+      'A component for updating your application'#13#10'Designed for projects hosted by SourceForge and GitHub'#13#10#13#10'Main methods:'#13#10'Procedure AutoUpdate'#13#10'Function NewVersionAvailable: Boolean'#13#10'Function DownloadNewVersion: Boolean'#13#10'Function UpdateToNewVersion: Boolean'#13#10'Procedure ShowWhatsNewIfAvailable'#13#10'For troubleshooting, set DebugMode=TRUE'
+    )
+    About.Title = 'About LazAutoUpdate'
+    About.Height = 450
+    About.Width = 400
+    About.Font.Color = clNavy
+    About.Font.Height = -13
+    About.BackGroundColor = clWindow
+    About.Version = '0.3.8'
+    About.Authorname = 'Gordon Bamber'
+    About.Organisation = 'Public Domain'
+    About.AuthorEmail = 'minesadorada@charcodelvalle.com'
+    About.ComponentName = 'Laz Auto-update v0.3.8'
+    About.LicenseType = abModifiedGPL
+    OnDebugEvent = LazAutoUpdate1DebugEvent
+    UpdatesFolder = 'updates'
+    VersionsININame = 'versions.ini'
+    VersionCountLimit = 1000000
+    DownloadCountLimit = 10000000
+    WorkingMode = lauUpdate
+    ShortCut.ShortcutName = 'MyShortcutName'
+    ShortCut.Category = scAudioVideo
+    Left = 960
+    Top = 16
+  end
+end
